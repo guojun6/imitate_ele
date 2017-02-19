@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>行内元素垂直居中</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .d span:first-child {
+        display: inline-block;
+        background: #aaa;
+        padding: 4px;
+        vertical-align: bottom;
+     }
+      .d span:nth-child(2) {
+        display: inline-block;
+        vertical-align: bottom;;
+        font-size: 34px;
+      }
+      .d img {
+        vertical-align: middle;;
+      }
+      .dd {
+        height: 50px;
+        display: flex;
+        flex: 1;
+      }
+
+      .clear::after {
+        content: ' ';
+        display: block;
+        clear: both;
+      }
+      .left {
+        float: left;
+      }
+
+      .topbottom {
+        position: absolute;
+        //display: flex;
+        top: 0;
+        bottom: 400px;
+        width: 100%;
+        //overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="d">
+      <span>wda1  </span>
+      <span> 12312312312</span>
+
+      <!--<img src="assets/logo.png" alt="">-->
+    </header>
+    以大尺寸大的元素为基准，
+    <div class="dd">
+      <div class="">
+
+      </div>
+    </div>
+
+    <div class="clear">
+      <div class="left">
+        asdad
+      </div>
+    </div>
+
+
+    <div class="topbottom">
+
+    </div>
+  </body>
+</html>
