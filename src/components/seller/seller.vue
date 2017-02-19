@@ -193,9 +193,6 @@ export default {
     margin: 0 5% 10px;
     padding: 10px 0 0;
     width: 90%;
-    height: 190px;
-    overflow: scroll;
-    white-space: nowrap;
     .title {
       font-size: 18px;
       font-weight: bold;
@@ -203,6 +200,8 @@ export default {
   }
   .shop-view {
     font-size: 0;
+    overflow: scroll;
+    white-space: nowrap;
     >li {
       display: inline-block;
       margin-right: 10px;
