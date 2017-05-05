@@ -56,6 +56,7 @@ export default {
     border-radius: 10px;
   }
   .food-amount {
+    min-width: 24px;
     padding: 0 10px;
     color: #252525;
     font-size: 12px;

@@ -69,9 +69,9 @@ export default {
     };
   },
   mounted () {
-    this.$nextTick(() => {
-      this._initBScroll();
-    });
+    // this.$nextTick(() => {
+    //   this._initBScroll();
+    // });
   },
   methods: {
     getSupportsType (index) {

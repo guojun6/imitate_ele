@@ -133,20 +133,22 @@ export default {
   z-index: 2;
   .bottom {
     display: flex;
+    align-items: center;
+    height: 60px;
     background: #333;
-    line-height: 60px;
+    // line-height: 60px;
     font-size: 14px;
     color: rgba(255,255,255,0.5);
   }
   .icon {
-    flex: 0 0 44px;
+    flex: 0 0 REM(88);
     position: relative;
     top: -10px;
-    width: 44px;
-    height: 44px;
+    width: REM(88);
+    height: REM(88);
     margin-left: 16px;
-    border: 8px solid #333;
-    border-radius: 30px;
+    border: REM(16) solid #333;
+    border-radius: REM(60);
     background: #6e6e6e url(./images/icon_shopcart.png) no-repeat center center;
     background-size: 33px 33px;
     &.active {
@@ -183,6 +185,7 @@ export default {
     height: 60px;
     flex: 0 0 100px;
     text-align: center;
+    line-height: 60px;
     background: #6e6e6e;
     &.active {
       background: #8fcc17;
@@ -259,7 +262,7 @@ export default {
           text-align: center;
         }
         .cartcontrol-wrap {
-          flex: 0 0 72px;
+          flex: 0 0 88px;
         }
       }
     }
