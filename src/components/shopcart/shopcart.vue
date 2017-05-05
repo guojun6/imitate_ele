@@ -263,6 +263,9 @@ export default {
         }
         .cartcontrol-wrap {
           flex: 0 0 88px;
+          .food-amount {
+            min-width: 24px;
+          }
         }
       }
     }
